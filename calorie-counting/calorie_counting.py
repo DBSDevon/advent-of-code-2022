@@ -39,5 +39,11 @@ def findAnswer(txtFile):
     answer = findMaxSum(inputList)
     return answer
 
-answer = findAnswer('example_input.txt')
+#answer = findAnswer('example_input.txt')
+#print(answer)
+
+answer = findAnswer('input.txt')
 print(answer)
+
+#71502
+
