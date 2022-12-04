@@ -70,7 +70,7 @@ def findPartOneAnswer(txtFile):
     partOneAnswer = calculateTotalScore(inputList)
     return partOneAnswer
 
-partOneAnswer = findPartOneAnswer('input.txt')
-print(partOneAnswer)
+#partOneAnswer = findPartOneAnswer('input.txt')
+#print(partOneAnswer)
 
 #15691

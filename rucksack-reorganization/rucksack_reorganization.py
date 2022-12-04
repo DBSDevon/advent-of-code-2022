@@ -53,7 +53,33 @@ def findPartOneAnswer(txtFile):
 #partOneAnswer = findPartOneAnswer('example_input.txt')
 #print(partOneAnswer)
 
-partOneAnswer = findPartOneAnswer('input.txt')
-print(partOneAnswer)
+#partOneAnswer = findPartOneAnswer('input.txt')
+#print(partOneAnswer)
 
 #8053
+
+def findCommonItemSolution2(rucksack):
+    for index in range(0, int(len(rucksack)/2)):
+        if rucksack[index] in rucksack[int(len(rucksack)/2):]:
+            return rucksack[index]
+
+def calculatePrioritySumSolution2(rucksackList):
+    prioritySum = 0
+    for rucksack in rucksackList:
+        commonItem = findCommonItemSolution2(rucksack)
+        if commonItem.islower():
+            prioritySum = prioritySum + convertLowerToPriority(commonItem)
+        else:
+            prioritySum = prioritySum + convertUpperToPriority(commonItem)
+    return prioritySum
+
+def findPartOneAnswerSolution2(txtFile):
+    inputList = convertInputToList(txtFile)
+    partOneAnswer = calculatePrioritySumSolution2(inputList)
+    return partOneAnswer
+
+#partOneAnswer = findPartOneAnswerSolution2('input.txt')
+#print(partOneAnswer)
+
+
+
