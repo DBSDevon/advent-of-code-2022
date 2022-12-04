@@ -34,16 +34,16 @@ def findMaxSum(elfList):
             maxSum = caloriesSum
     return maxSum
 
-def findAnswer(txtFile):
+def findPartOneAnswer(txtFile):
     inputList = convertInputToList(txtFile)
-    answer = findMaxSum(inputList)
-    return answer
+    partOneAnswer = findMaxSum(inputList)
+    return partOneAnswer
 
 #answer = findAnswer('example_input.txt')
 #print(answer)
 
-answer = findAnswer('input.txt')
-print(answer)
+partOneAnswer = findPartOneAnswer('input.txt')
+print(partOneAnswer)
 
 #71502
 
