@@ -39,9 +39,6 @@ def findPartOneAnswer(txtFile):
     partOneAnswer = findMaxSum(inputList)
     return partOneAnswer
 
-#answer = findAnswer('example_input.txt')
-#print(answer)
-
 partOneAnswer = findPartOneAnswer('input.txt')
 print(partOneAnswer)
 
