@@ -1,3 +1,5 @@
+from queue import PriorityQueue
+
 #Day 1 solution
 def convertInputToList(txtFile):
     inputList = []
@@ -12,8 +14,8 @@ def convertInputToList(txtFile):
         inputList.append(newList.copy())
     return inputList
 
-#example_File = 'example_input.txt'
-#exampleInputList = convertInputToList(example_File)
+example_File = 'example_input.txt'
+exampleInputList = convertInputToList(example_File)
 #print(exampleInputList)
 
 #puzzleInputFile = 'input.txt'
@@ -43,4 +45,28 @@ def findPartOneAnswer(txtFile):
 #print(partOneAnswer)
 
 #71502
+
+
+def findTopThreeSum(elfList):
+    topThreeQ = PriorityQueue()
+    for elf in elfList:
+        caloriesSum = sumElfCalories(elf)
+        #print(caloriesSum)
+        topThreeQ.put(caloriesSum)
+        if topThreeQ.qsize() > 3:
+            topThreeQ.get()
+    topThreeSum = 0
+    while not topThreeQ.empty():
+        topThreeSum += topThreeQ.get()
+    return topThreeSum
+
+def findPartTwoAnswer(txtFile):
+    inputList = convertInputToList(txtFile)
+    partTwoAnswer = findTopThreeSum(inputList)
+    return partTwoAnswer
+
+partTwoAnswer = findPartTwoAnswer('input.txt')
+print(partTwoAnswer)
+
+#208191
 
