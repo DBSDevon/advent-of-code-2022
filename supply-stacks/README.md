@@ -44,3 +44,4 @@ move 1 from 1 to 2
 <p>The Elves just need to know <em>which crate will end up on top of each stack</em>; in this example, the top crates are <code>C</code> in stack 1, <code>M</code> in stack 2, and <code>Z</code> in stack 3, so you should combine these together and give the Elves the message <code><em>CMZ</em></code>.</p>
 <p><em>After the rearrangement procedure completes, what crate ends up on top of each stack?</em></p>
 </article>
+</main>

@@ -49,3 +49,4 @@
 <p>So, in this example, the number of overlapping assignment pairs is <code><em>4</em></code>.</p>
 <p><em>In how many assignment pairs do the ranges overlap?</em></p>
 </article>
+</main>
