@@ -51,3 +51,32 @@ def findPartOneAnswer(txtFile):
 #print(partOneAnswer)
 
 #651
+
+
+def hasOverlap(assignmentPair):
+    if assignmentPair[0][0] <= assignmentPair[1][0]:
+        smallerSection = assignmentPair[0]
+        largerSection = assignmentPair[1]
+    else:
+        smallerSection = assignmentPair[1]
+        largerSection = assignmentPair[0]
+    if largerSection[0] <= smallerSection[1]:
+        return 1
+    else:
+        return 0
+
+def findTotalOverlappedPairs(sectionAssignmentsList):
+    totalOverlappedPairs = 0
+    for assignmentPair in sectionAssignmentsList:
+        totalOverlappedPairs = totalOverlappedPairs + hasOverlap(assignmentPair)
+    return totalOverlappedPairs
+
+def findPartTwoAnswer(txtFile):
+    inputList = convertInputToList(txtFile)
+    partTwoAnswer = findTotalOverlappedPairs(inputList)
+    return partTwoAnswer
+
+#partTwoAnswer = findPartTwoAnswer('input.txt')
+#print(partTwoAnswer)
+
+#956
