@@ -65,8 +65,8 @@ def findPartTwoAnswer(txtFile):
     partTwoAnswer = findTopThreeSum(inputList)
     return partTwoAnswer
 
-partTwoAnswer = findPartTwoAnswer('input.txt')
-print(partTwoAnswer)
+#partTwoAnswer = findPartTwoAnswer('input.txt')
+#print(partTwoAnswer)
 
 #208191
 
