@@ -81,4 +81,30 @@ def findPartOneAnswerSolution2(txtFile):
 #findPartOneAnswerSolution2('input.txt')
 
 
+def findCommonBadge(rucksackStrOne, rucksackStrTwo, rucksackStrThree):
+    rucksackSetOne = set(rucksackStrOne)
+    rucksackSetTwo = set(rucksackStrTwo)
+    rucksackSetThree = set(rucksackStrThree)
+    commonBadgeSet = rucksackSetOne & rucksackSetTwo & rucksackSetThree
+    commonBadge = commonBadgeSet.pop()
+    return commonBadge
 
+def calculateBadgePrioritySum(rucksackList):
+    badgePrioritySum = 0
+    for index in range(0, len(rucksackList), 3):
+        commonBadge = findCommonBadge(rucksackList[index], rucksackList[index+1], rucksackList[index+2])
+        if commonBadge.islower():
+            badgePrioritySum = badgePrioritySum + convertLowerToPriority(commonBadge)
+        else:
+            badgePrioritySum = badgePrioritySum + convertUpperToPriority(commonBadge)
+    return badgePrioritySum
+
+def findPartTwoAnswer(txtFile):
+    inputList = convertInputToList(txtFile)
+    partTwoAnswer = calculateBadgePrioritySum(inputList)
+    print(partTwoAnswer)
+    return partTwoAnswer
+
+#findPartTwoAnswer('input.txt')
+
+#2425
