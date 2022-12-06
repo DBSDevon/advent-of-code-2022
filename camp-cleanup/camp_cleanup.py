@@ -45,10 +45,10 @@ def findTotalFullyContainedPairs(sectionAssignmentsList):
 def findPartOneAnswer(txtFile):
     inputList = convertInputToList(txtFile)
     partOneAnswer = findTotalFullyContainedPairs(inputList)
+    print(partOneAnswer)
     return partOneAnswer
 
-#partOneAnswer = findPartOneAnswer('input.txt')
-#print(partOneAnswer)
+#findPartOneAnswer('input.txt')
 
 #651
 
@@ -74,9 +74,9 @@ def findTotalOverlappedPairs(sectionAssignmentsList):
 def findPartTwoAnswer(txtFile):
     inputList = convertInputToList(txtFile)
     partTwoAnswer = findTotalOverlappedPairs(inputList)
+    print(partTwoAnswer)
     return partTwoAnswer
 
-#partTwoAnswer = findPartTwoAnswer('input.txt')
-#print(partTwoAnswer)
+#findPartTwoAnswer('input.txt')
 
 #956

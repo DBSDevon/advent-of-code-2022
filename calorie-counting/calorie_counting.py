@@ -39,10 +39,10 @@ def findMaxSum(elfList):
 def findPartOneAnswer(txtFile):
     inputList = convertInputToList(txtFile)
     partOneAnswer = findMaxSum(inputList)
+    print(partOneAnswer)
     return partOneAnswer
 
-#partOneAnswer = findPartOneAnswer('input.txt')
-#print(partOneAnswer)
+#findPartOneAnswer('input.txt')
 
 #71502
 
@@ -63,10 +63,10 @@ def findTopThreeSum(elfList):
 def findPartTwoAnswer(txtFile):
     inputList = convertInputToList(txtFile)
     partTwoAnswer = findTopThreeSum(inputList)
+    print(partTwoAnswer)
     return partTwoAnswer
 
-#partTwoAnswer = findPartTwoAnswer('input.txt')
-#print(partTwoAnswer)
+#findPartTwoAnswer('input.txt')
 
 #208191
 

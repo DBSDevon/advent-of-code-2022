@@ -69,10 +69,10 @@ def calculateTotalScore(gameList):
 def findPartOneAnswer(txtFile):
     inputList = convertInputToList(txtFile)
     partOneAnswer = calculateTotalScore(inputList)
+    print(partOneAnswer)
     return partOneAnswer
 
-#partOneAnswer = findPartOneAnswer('input.txt')
-#print(partOneAnswer)
+#findPartOneAnswer('input.txt')
 
 #15691
 
@@ -129,9 +129,9 @@ def calculatePartTwoTotalScore(gameList):
 def findPartTwoAnswer(txtFile):
     inputList = convertInputToList(txtFile)
     partTwoAnswer = calculatePartTwoTotalScore(inputList)
+    print(partTwoAnswer)
     return partTwoAnswer
 
-#partTwoAnswer = findPartTwoAnswer('input.txt')
-#print(partTwoAnswer)
+#findPartTwoAnswer('input.txt')
 
 #12989

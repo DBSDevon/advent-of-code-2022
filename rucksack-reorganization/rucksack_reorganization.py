@@ -48,13 +48,12 @@ def calculatePrioritySum(rucksackList):
 def findPartOneAnswer(txtFile):
     inputList = convertInputToList(txtFile)
     partOneAnswer = calculatePrioritySum(inputList)
+    print(partOneAnswer)
     return partOneAnswer
 
-#partOneAnswer = findPartOneAnswer('example_input.txt')
-#print(partOneAnswer)
+#findPartOneAnswer('example_input.txt')
 
-#partOneAnswer = findPartOneAnswer('input.txt')
-#print(partOneAnswer)
+#findPartOneAnswer('input.txt')
 
 #8053
 
@@ -76,10 +75,10 @@ def calculatePrioritySumSolution2(rucksackList):
 def findPartOneAnswerSolution2(txtFile):
     inputList = convertInputToList(txtFile)
     partOneAnswer = calculatePrioritySumSolution2(inputList)
+    print(partOneAnswer)
     return partOneAnswer
 
-#partOneAnswer = findPartOneAnswerSolution2('input.txt')
-#print(partOneAnswer)
+#findPartOneAnswerSolution2('input.txt')
 
 
 
