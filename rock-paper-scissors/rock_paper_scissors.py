@@ -7,8 +7,8 @@ def convertInputToList(txtFile):
             inputList.append(line.strip().split())
     return inputList
 
-example_File = 'example_input.txt'
-exampleInputList = convertInputToList(example_File)
+#example_File = 'example_input.txt'
+#exampleInputList = convertInputToList(example_File)
 #print(exampleInputList)
 
 """The score for a single round is the score for the shape you selected

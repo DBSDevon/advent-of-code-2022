@@ -1,6 +1,7 @@
+#Day 1 solution
+
 from queue import PriorityQueue
 
-#Day 1 solution
 def convertInputToList(txtFile):
     inputList = []
     with open(txtFile) as inputFile:
@@ -14,13 +15,9 @@ def convertInputToList(txtFile):
         inputList.append(newList.copy())
     return inputList
 
-example_File = 'example_input.txt'
-exampleInputList = convertInputToList(example_File)
+#example_File = 'example_input.txt'
+#exampleInputList = convertInputToList(example_File)
 #print(exampleInputList)
-
-#puzzleInputFile = 'input.txt'
-#puzzleInputList = convertInputToList(puzzleInputFile)
-#print(puzzleInputList)
 
 def sumElfCalories(caloriesList):
     caloriesSum = 0

@@ -7,8 +7,8 @@ def convertInputToList(txtFile):
         #inputList = inputFile.readlines()
     return inputList
 
-example_File = 'example_input.txt'
-exampleInputList = convertInputToList(example_File)
+#example_File = 'example_input.txt'
+#exampleInputList = convertInputToList(example_File)
 #print(exampleInputList)
 
 #item is character/letter
